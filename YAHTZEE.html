@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--This game is Yahtzee, you can roll up to three times before the game is over. 
+	To win, you need to have a large straight with values 1,2,3,4,5 or 2,3,4,5,6
+	To play, click the play button causing the dice to roll, the "Roll Dice" button will be deactivated
+	To roll die, click the roll die button which causes the play button to deactivate
+	To keep your die during the first and second roll, click the keeper buttons on the die you would like to keep.
+	If you end up keeping the desired amount, you win -- else you lose (message appears)
+	-->
+<head>
+<style>
+h2
+{
+	color:red;
+}
+
+#die 
+{
+	visibility: hidden;
+}
+rollButton
+{
+	button: disabled;
+}
+
+</style>
+<h2>This will be a game</h2>
+</head>
+<body>
+
+<!-- Insert blank images and die images here-->
+		<div id = "blanks">
+		<img src = "blank.png">
+		<img src = "blank.png">
+		<img src = "blank.png">
+		<img src = "blank.png">
+		<img src = "blank.png">
+		<img src = "blank.png">
+		</div>
+		
+		<div id = "die">
+		<img src = "die1.png" >
+		<img src = "die2.png" >	
+		<img src = "die3.png" >
+		<img src = "die4.png" >
+		<img src = "die5.png" >
+		<img src = "die6.png" >
+		</div>
+	
+	<div id = "keepers">
+		<button id = "keeper">keep?</button>
+		<button id = "keeper">keep?</button>
+		<button id = "keeper">keep?</button>
+		<button id = "keeper">keep?</button>
+		<button id = "keeper">keep?</button>
+		<button id = "keeper">keep?</button>
+		</div>
+	<br>
+<!--Create play button and roll button-->
+
+		<input type="button" id ="playButton" onclick="play()" value = "Play">
+		
+		<input type="button" id="rollButton" onclick="roll()" value = "Roll Die">
+
+
+<script>
+//roll dice button is initially disabled and play button isn't 
+function play()
+{
+	if(playButton
+	var disableRoll = document.getElementById("rollButton").disabled = true;
+}
+
+
+//function disables the play button once you click "roll dice"
+
+function roll()
+{
+	var disablePlay = document.getElementById("playButton").disabled = true;
+	
+}
+
+//function shows the die images once you click the play button
+function showDie()
+{
+	var clickPlay = document.getElementById("playButton").style.display = "die";
+}
+
+</script>
+</body>
+</html>
